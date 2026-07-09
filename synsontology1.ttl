@@ -1,0 +1,150 @@
+@prefix : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#> .
+
+<http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1> rdf:type owl:Ontology ;
+                                                                     owl:versionIRI <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#definedBy
+:definedBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :WorkComponent ;
+           rdfs:range :SynestheticTheory ;
+           rdfs:comment "Associates a work component (WorkComponent) with the synesthetic theory (SynestheticTheory) that governs and explains its association." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#evokesValue
+:evokesValue rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :WorkComponent ;
+             rdfs:range :EvokedValue ;
+             rdfs:comment "Links a work component (WorkComponent) to the specific entity, concept, or sensation (EvokedValue) that is mentally triggered or recalled by the synesthetic phenomenon." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#hasComponent
+:hasComponent rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :Work ;
+              rdfs:range :WorkComponent ;
+              rdfs:comment "Links a work (Work) to the individual atomic elements or parts that constitute it (WorkComponent)." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#hasCorrespondenceType
+:hasCorrespondenceType rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :SynestheticTheory ;
+                       rdfs:range :CorrespondenceType ;
+                       rdfs:comment "Links a given synesthetic theory (SynestheticTheory) to the intrinsic nature of its correspondence (CorrespondenceType)." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#hasSourceModality
+:hasSourceModality rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :WorkComponent ;
+                   rdfs:range :SensoryModality ;
+                   rdfs:comment "Specifies the starting sensory modality (SensoryModality) inherent to the original stimulus of the artistic component." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#hasTargetModality
+:hasTargetModality rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :EvokedValue ;
+                   rdfs:range :SensoryModality ;
+                   rdfs:comment "Specifies the destination sensory modality (SensoryModality) toward which the synesthetic association is directed and evoked." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#hasBibliographicSource
+:hasBibliographicSource rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :SynestheticTheory ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Contains the bibliographic, literary, or documentary reference from which the examined synesthetic theory is derived." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#hasPhysicalOrTextualValue
+:hasPhysicalOrTextualValue rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:domain :WorkComponent ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Specifies the literal value, textual string, or physical data directly associated with a work component (e.g., a musical key or a poetic verse)." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#hasPitch
+:hasPitch rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :WorkComponent ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Indicates the frequency or musical pitch (e.g., \"High\"/\"Low\") identified within the analyzed sound component." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#CorrespondenceType
+:CorrespondenceType rdf:type owl:Class ;
+                    rdfs:comment "Represents the type of conceptual association (e.g., physical, perceptual, or affective) upon which a specific synesthetic theory is based." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#EvokedValue
+:EvokedValue rdf:type owl:Class ;
+             rdfs:comment "Represents the concept, sensation, or perceived entity that is brought to mind through the synesthetic stimulus." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#LiteraryWork
+:LiteraryWork rdf:type owl:Class ;
+              rdfs:subClassOf :Work ;
+              rdfs:comment "Represents an artistic work of a textual, poetic, or literary nature (e.g., a sonnet or a poem)." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#MusicalWork
+:MusicalWork rdf:type owl:Class ;
+             rdfs:subClassOf :Work ;
+             rdfs:comment "Represents an artistic work of a primarily musical or compositional nature (e.g., an opera or a symphony)." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#ScientificWork
+:ScientificWork rdf:type owl:Class ;
+                rdfs:subClassOf :Work ;
+                rdfs:comment "Represents a construct, a theoretical system, or an empirical experiment of a scientific-structural nature." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#SensoryModality
+:SensoryModality rdf:type owl:Class ;
+                 rdfs:comment "Represents the sensory channel or perceptual modality (e.g., auditory, visual, olfactory) involved in the cross-modal association." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#SynestheticTheory
+:SynestheticTheory rdf:type owl:Class ;
+                   rdfs:comment "Represents the theoretical, poetic, or experimental framework that encodes and justifies cross-modal associations between different sensory modalities." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#VisualArtsWork
+:VisualArtsWork rdf:type owl:Class ;
+                rdfs:subClassOf :Work ;
+                rdfs:comment "Represents a visual, plastic, or pictorial artistic work (e.g., a painting or a drawing)." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#Work
+:Work rdf:type owl:Class ;
+      rdfs:comment "Represents an artistic work or a conceptual/scientific construct subject to synesthetic analysis." .
+
+
+###  http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#WorkComponent
+:WorkComponent rdf:type owl:Class ;
+               rdfs:comment "Represents the atomic constituent element of a work of art that acts as a trigger or vehicle for the synesthetic stimulus." .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
