@@ -1,0 +1,71 @@
+# First query: retrieve all works and their types, OPTIONAL
+PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
+
+SELECT ?work ?workType WHERE {
+    ?work a ?workType .
+    FILTER (?workType IN (:ScientificWork, :MusicalWork, :VisualArtsWork, :LiteraryWork))
+}
+ORDER BY ?workType
+
+#Query 2: Inspect Rimbaud's Voyelles, OPTIONAL
+PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
+
+SELECT ?component ?letter ?evokedValue WHERE {
+    :Poem_Voyelles :hasComponent ?component .
+    ?component :hasPhysicalOrTextualValue ?letter ;
+        :evokesValue ?evokedValue .
+}
+ORDER BY ?letter
+
+# Query 3: How a source modality triggers a target modality?
+PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
+
+SELECT ?work ?componentText ?sourceModality ?evokedValue ?targetModality WHERE {
+    ?work :hasComponent ?component .
+    ?component :hasPhysicalOrTextualValue ?componentText ;
+        :hasSourceModality ?sourceModality ;
+        :evokesValue ?evokedValue .
+    ?evokedValue :hasTargetModality ?targetModality .
+}
+ORDER BY ?work
+
+# Query 4: Retrieve the bibliographic sources of the synesthetic theories that rely on a "Perceptual Correspondence" (as opposed to physical or affective)
+PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
+
+SELECT ?theory ?source WHERE {
+    ?theory a :SynestheticTheory ;
+        :hasCorrespondenceType :PerceptualCorrespondence ;
+        :hasBibliographicSource ?source .
+}
+
+# Query 5: How many times each sensory modality is target-evoked?
+PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
+
+SELECT ?targetModality (COUNT(?evokedValue) AS ?totalEvoked) WHERE {
+    ?evokedValue a :EvokedValue ;
+        :hasTargetModality ?targetModality .
+}
+GROUP BY ?targetModality
+ORDER BY DESC(?totalEvoked)
+
+# Query 6: What scents described in the Odophone system by Piesse are triggered by the musical notes, optional: considering also the pitch?
+PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
+
+SELECT ?noteText ?pitch ?evokedScent WHERE {
+    :Piesse_Odophone_System :hasComponent ?component .
+    ?component :hasPhysicalOrTextualValue ?noteText ;
+               :evokesValue ?evokedScent .
+    OPTIONAL { ?component :hasPitch ?pitch }
+}
+ORDER BY ?pitch ?noteText
+
+# Query 7: Retrieve the visual elements and matches them to the musical instruments they evoke and their target modality
+PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
+
+SELECT ?colorElement ?evokedInstrument ?targetModality WHERE {
+    ?component :definedBy :Kandinsky_Theory ;
+               :hasPhysicalOrTextualValue ?colorElement ;
+               :evokesValue ?evokedInstrument .
+    ?evokedInstrument :hasTargetModality ?targetModality .
+}
+ORDER BY ?colorElement
