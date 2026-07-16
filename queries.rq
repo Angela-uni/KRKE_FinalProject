@@ -48,7 +48,7 @@ SELECT ?targetModality (COUNT(?evokedValue) AS ?totalEvoked) WHERE {
 GROUP BY ?targetModality
 ORDER BY DESC(?totalEvoked)
 
-# Query 6: What scents described in the Odophone system by Piesse are triggered by the musical notes, optional: considering also the pitch?
+# Query 6: What scents described in the Odophone system by Piesse are triggered by the musical notes considering the high pitch?
 PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
 
 SELECT ?noteText ?pitch ?evokedScent WHERE {
@@ -60,7 +60,7 @@ SELECT ?noteText ?pitch ?evokedScent WHERE {
 }
 ORDER BY ?pitch ?noteText
 
-# Query 7: Retrieve the visual elements and matches them to the musical instruments they evoke and their target modality
+# Query 7: Retrieve the visual modality as source and match the results to the auditory modalities they target.
 PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
 
 SELECT ?theory ?work ?sourceValue ?evokedValue WHERE {
