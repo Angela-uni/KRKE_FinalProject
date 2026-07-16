@@ -1,4 +1,4 @@
-# First query: retrieve all works and their types, OPTIONAL
+# Query 1: retrieve all works and their types, OPTIONAL
 PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
 
 SELECT ?work ?workType WHERE {
@@ -56,16 +56,19 @@ SELECT ?noteText ?pitch ?evokedScent WHERE {
     ?component :hasPhysicalOrTextualValue ?noteText ;
                :evokesValue ?evokedScent .
     OPTIONAL { ?component :hasPitch ?pitch }
+    FILTER(?pitch = "High")
 }
 ORDER BY ?pitch ?noteText
 
 # Query 7: Retrieve the visual elements and matches them to the musical instruments they evoke and their target modality
 PREFIX : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#>
 
-SELECT ?colorElement ?evokedInstrument ?targetModality WHERE {
-    ?component :definedBy :Kandinsky_Theory ;
-               :hasPhysicalOrTextualValue ?colorElement ;
-               :evokesValue ?evokedInstrument .
-    ?evokedInstrument :hasTargetModality ?targetModality .
+SELECT ?theory ?work ?sourceValue ?evokedValue WHERE {
+    ?component :hasSourceModality :VisualModality ;
+               :hasPhysicalOrTextualValue ?sourceValue ;
+               :evokesValue ?evokedValue ;
+               :definedBy ?theory .
+    ?evokedValue :hasTargetModality ?AuditoryModality .
+    OPTIONAL { ?work :hasComponent ?component }
 }
-ORDER BY ?colorElement
+ORDER BY ?theory ?sourceValue
