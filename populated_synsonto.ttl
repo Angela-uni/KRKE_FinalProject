@@ -1,0 +1,806 @@
+@prefix : <http://www.semanticweb.org/digitalhumanities/ontologies/synsonto1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Field_Chromatics_Scale a :ScientificWork ;
+    :hasComponent :Comp_Field_NoteA,
+        :Comp_Field_NoteB,
+        :Comp_Field_NoteC,
+        :Comp_Field_NoteD,
+        :Comp_Field_NoteE,
+        :Comp_Field_NoteF,
+        :Comp_Field_NoteG .
+
+:Newton_Spectrum_Scale a :ScientificWork ;
+    :hasComponent :Comp_Newton_NoteA,
+        :Comp_Newton_NoteB,
+        :Comp_Newton_NoteC_High,
+        :Comp_Newton_NoteD,
+        :Comp_Newton_NoteE,
+        :Comp_Newton_NoteF,
+        :Comp_Newton_NoteG .
+
+:Opera_Prometheus_PoemOfFire a :MusicalWork ;
+    :hasComponent :Comp_Skrjabin_A,
+        :Comp_Skrjabin_C,
+        :Comp_Skrjabin_D,
+        :Comp_Skrjabin_E,
+        :Comp_Skrjabin_F_Sharp,
+        :Comp_Skrjabin_G .
+
+:Painting_Yellow_Red_Blue a :VisualArtsWork ;
+    :hasComponent :Comp_Kandinsky_Blue,
+        :Comp_Kandinsky_Green,
+        :Comp_Kandinsky_Light_Blue,
+        :Comp_Kandinsky_Orange,
+        :Comp_Kandinsky_Red,
+        :Comp_Kandinsky_Violet,
+        :Comp_Kandinsky_Yellow .
+
+:Piesse_Odophone_System a :ScientificWork ;
+    :hasComponent :Comp_Piesse_NoteA_Bass_2,
+        :Comp_Piesse_NoteA_Central,
+        :Comp_Piesse_NoteA_Treble_1,
+        :Comp_Piesse_NoteA_Treble_2,
+        :Comp_Piesse_NoteB_Bass_2,
+        :Comp_Piesse_NoteB_Central,
+        :Comp_Piesse_NoteB_Treble_1,
+        :Comp_Piesse_NoteB_Treble_2,
+        :Comp_Piesse_NoteC_Bass_1,
+        :Comp_Piesse_NoteC_Bass_3,
+        :Comp_Piesse_NoteC_Treble_1,
+        :Comp_Piesse_NoteC_Treble_2,
+        :Comp_Piesse_NoteC_Treble_3,
+        :Comp_Piesse_NoteD_Bass_3,
+        :Comp_Piesse_NoteD_Central,
+        :Comp_Piesse_NoteD_Treble_1,
+        :Comp_Piesse_NoteD_Treble_2,
+        :Comp_Piesse_NoteE_Bass_2,
+        :Comp_Piesse_NoteE_Central,
+        :Comp_Piesse_NoteE_Treble_1,
+        :Comp_Piesse_NoteE_Treble_2,
+        :Comp_Piesse_NoteF_Bass_2,
+        :Comp_Piesse_NoteF_Central,
+        :Comp_Piesse_NoteF_Treble_1,
+        :Comp_Piesse_NoteF_Treble_2,
+        :Comp_Piesse_NoteG_Bass_2,
+        :Comp_Piesse_NoteG_Central,
+        :Comp_Piesse_NoteG_Treble_1,
+        :Comp_Piesse_NoteG_Treble_2 .
+
+:Poem_Correspondances a :LiteraryWork ;
+    :hasComponent :Comp_Baudelaire_Perfumes .
+
+:Poem_La_mia_sera a :LiteraryWork ;
+    :hasComponent :Comp_Pascoli_Voices .
+
+:Poem_The_sensitive_plant a :LiteraryWork ;
+    :hasComponent :Comp_Shelley_Hyacinth .
+
+:Poem_They_have_a_little_Odor a :LiteraryWork ;
+    :hasComponent :Comp_Dickinson_Odor .
+
+:Poem_Voyelles a :LiteraryWork ;
+    :hasComponent :Comp_Rimbaud_A,
+        :Comp_Rimbaud_E,
+        :Comp_Rimbaud_I,
+        :Comp_Rimbaud_O,
+        :Comp_Rimbaud_U .
+
+:Poem_X_August a :LiteraryWork ;
+    :hasComponent :Comp_Pascoli_OpenEyes .
+
+:A_Melody a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:A_Scream a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:Acacia_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Almond_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Ambergris_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Balsam_Of_Peru_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Baudelaire_Poetics a :SynestheticTheory ;
+    :hasBibliographicSource "C. Baudelaire: Correspondances (1857)"^^xsd:string ;
+    :hasCorrespondenceType :AffectiveCorrespondence .
+
+:Benzoin_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Bergamot_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Black_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:BrightYellow_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Calamus_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Camphor_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Castor_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Cedral_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Cello_Sound a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:ChurchBell_Sound a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:Cinnamon_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Citronella_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Civet_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Clematis_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Clove_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Comp_Baudelaire_Perfumes a :WorkComponent ;
+    :definedBy :Baudelaire_Poetics ;
+    :evokesValue :FreshFlesh_Sensation ;
+    :hasPhysicalOrTextualValue "Perfumes fresh as childrens flesh"^^xsd:string ;
+    :hasSourceModality :OlfactoryModality .
+
+:Comp_Dickinson_Odor a :WorkComponent ;
+    :definedBy :Dickinson_Poetics ;
+    :evokesValue :A_Melody ;
+    :hasPhysicalOrTextualValue "They have a little Odor"^^xsd:string ;
+    :hasSourceModality :OlfactoryModality .
+
+:Comp_Field_NoteA a :WorkComponent ;
+    :definedBy :Field_Chromatics_Theory ;
+    :evokesValue :YellowGreen_Color ;
+    :hasPhysicalOrTextualValue "Note A"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Field_NoteB a :WorkComponent ;
+    :definedBy :Field_Chromatics_Theory ;
+    :evokesValue :Green_Color ;
+    :hasPhysicalOrTextualValue "Note B"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Field_NoteC a :WorkComponent ;
+    :definedBy :Field_Chromatics_Theory ;
+    :evokesValue :Blue_Color ;
+    :hasPhysicalOrTextualValue "Note C"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Field_NoteD a :WorkComponent ;
+    :definedBy :Field_Chromatics_Theory ;
+    :evokesValue :Purple_Color ;
+    :hasPhysicalOrTextualValue "Note D"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Field_NoteE a :WorkComponent ;
+    :definedBy :Field_Chromatics_Theory ;
+    :evokesValue :Red_Color ;
+    :hasPhysicalOrTextualValue "Note E"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Field_NoteF a :WorkComponent ;
+    :definedBy :Field_Chromatics_Theory ;
+    :evokesValue :Orange_Color ;
+    :hasPhysicalOrTextualValue "Note F"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Field_NoteG a :WorkComponent ;
+    :definedBy :Field_Chromatics_Theory ;
+    :evokesValue :Yellow_Color ;
+    :hasPhysicalOrTextualValue "Note G"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Kandinsky_Blue a :WorkComponent ;
+    :definedBy :Kandinsky_Theory ;
+    :evokesValue :Cello_Sound ;
+    :hasPhysicalOrTextualValue "Blue Element"^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Kandinsky_Green a :WorkComponent ;
+    :definedBy :Kandinsky_Theory ;
+    :evokesValue :Violin_Sound ;
+    :hasPhysicalOrTextualValue "Green Element"^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Kandinsky_Light_Blue a :WorkComponent ;
+    :definedBy :Kandinsky_Theory ;
+    :evokesValue :Flute_Sound ;
+    :hasPhysicalOrTextualValue "Light Blue Element"^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Kandinsky_Orange a :WorkComponent ;
+    :definedBy :Kandinsky_Theory ;
+    :evokesValue :ChurchBell_Sound ;
+    :hasPhysicalOrTextualValue "Orange Element"^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Kandinsky_Red a :WorkComponent ;
+    :definedBy :Kandinsky_Theory ;
+    :evokesValue :Tuba_Sound ;
+    :hasPhysicalOrTextualValue "Red Element"^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Kandinsky_Violet a :WorkComponent ;
+    :definedBy :Kandinsky_Theory ;
+    :evokesValue :EnglishHorn_Sound ;
+    :hasPhysicalOrTextualValue "Violet Element"^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Kandinsky_Yellow a :WorkComponent ;
+    :definedBy :Kandinsky_Theory ;
+    :evokesValue :Trumpet_Sound ;
+    :hasPhysicalOrTextualValue "Yellow Element"^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Newton_NoteA a :WorkComponent ;
+    :definedBy :Newton_Physical_Theory ;
+    :evokesValue :Blue_Color ;
+    :hasPhysicalOrTextualValue "Note A"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Newton_NoteB a :WorkComponent ;
+    :definedBy :Newton_Physical_Theory ;
+    :evokesValue :Indigo_Color ;
+    :hasPhysicalOrTextualValue "Note B"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Newton_NoteC_High a :WorkComponent ;
+    :definedBy :Newton_Physical_Theory ;
+    :evokesValue :Violet_Color ;
+    :hasPhysicalOrTextualValue "Note C"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Newton_NoteD a :WorkComponent ;
+    :definedBy :Newton_Physical_Theory ;
+    :evokesValue :Red_Color ;
+    :hasPhysicalOrTextualValue "Note D"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Newton_NoteE a :WorkComponent ;
+    :definedBy :Newton_Physical_Theory ;
+    :evokesValue :Orange_Color ;
+    :hasPhysicalOrTextualValue "Note E"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Newton_NoteF a :WorkComponent ;
+    :definedBy :Newton_Physical_Theory ;
+    :evokesValue :Yellow_Color ;
+    :hasPhysicalOrTextualValue "Note F"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Newton_NoteG a :WorkComponent ;
+    :definedBy :Newton_Physical_Theory ;
+    :evokesValue :Green_Color ;
+    :hasPhysicalOrTextualValue "Note G"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Pascoli_OpenEyes a :WorkComponent ;
+    :definedBy :Pascoli_Poetics ;
+    :evokesValue :A_Scream ;
+    :hasPhysicalOrTextualValue "A scream stayed in the open eyes"^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Pascoli_Voices a :WorkComponent ;
+    :definedBy :Pascoli_Poetics ;
+    :evokesValue :Blue_Color ;
+    :hasPhysicalOrTextualValue "The voices of blue darkness"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteA_Bass_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Storax_Odour ;
+    :hasPhysicalOrTextualValue "A Bass Clef (3rd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteA_Central a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Balsam_Of_Peru_Odour ;
+    :hasPhysicalOrTextualValue "A Bass Clef (2nd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteA_Treble_1 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Tolu_Odour ;
+    :hasPhysicalOrTextualValue "A Bass Clef (1st Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteA_Treble_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Vernal_Grass_Odour ;
+    :hasPhysicalOrTextualValue "A Treble Clef (Central)"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteB_Bass_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Clove_Odour ;
+    :hasPhysicalOrTextualValue "B Bass Clef (3rd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteB_Central a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Stokes_And_Pinks_Odour ;
+    :hasPhysicalOrTextualValue "B Bass Clef (2nd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteB_Treble_1 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Cinnamon_Odour ;
+    :hasPhysicalOrTextualValue "B Bass Clef (1st Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteB_Treble_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Southernwood_Odour ;
+    :hasPhysicalOrTextualValue "B Treble Clef (Central)"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteC_Bass_1 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Santal_Odour ;
+    :hasPhysicalOrTextualValue "C Bass Clef (2nd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteC_Bass_3 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Patchouly_Odour ;
+    :hasPhysicalOrTextualValue "C Bass Clef (3rd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteC_Treble_1 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Geranium_Odour ;
+    :hasPhysicalOrTextualValue "C Bass Clef (1st Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteC_Treble_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Rose_Odour ;
+    :hasPhysicalOrTextualValue "C Bass Clef (Central)"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteC_Treble_3 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Almond_Odour,
+        :Ambergris_Odour,
+        :Bergamot_Odour,
+        :Camphor_Odour,
+        :Cedral_Odour,
+        :Citronella_Odour,
+        :Civet_Odour,
+        :Jasmin_Odour,
+        :Jonquile_Odour,
+        :Lavander_Odour,
+        :Magnolia_Odour,
+        :Mint_Odour,
+        :Peppermint_Odour,
+        :Pineapple_Odour,
+        :Portugal_Odour,
+        :Syringa_Odour,
+        :Tonquin_Bean_Odour,
+        :Verbena_Odour ;
+    :hasPhysicalOrTextualValue "A Treble Clef (1st Octave Up)"^^xsd:string,
+        "A Treble Clef (2nd Octave Up)"^^xsd:string,
+        "B Treble Clef (1st Octave Up)"^^xsd:string,
+        "B Treble Clef (2nd Octave Up)"^^xsd:string,
+        "C Treble Clef (1st Octave Up)"^^xsd:string,
+        "C Treble Clef (2nd Octave Up)"^^xsd:string,
+        "C Treble Clef (3rd Octave Up)"^^xsd:string,
+        "D Treble Clef (1st Octave Up)"^^xsd:string,
+        "D Treble Clef (2nd Octave Up)"^^xsd:string,
+        "D Treble Clef (3rd Octave Up)"^^xsd:string,
+        "E Treble Clef (1st Octave Up)"^^xsd:string,
+        "E Treble Clef (2nd Octave Up)"^^xsd:string,
+        "E Treble Clef (3rd Octave Up)"^^xsd:string,
+        "F Treble Clef (1st Octave Up)"^^xsd:string,
+        "F Treble Clef (2nd Octave Up)"^^xsd:string,
+        "F Treble Clef (3rd Octave Up)"^^xsd:string,
+        "G Treble Clef (1st Octave Up)"^^xsd:string,
+        "G Treble Clef (2nd Octave Up)"^^xsd:string ;
+    :hasPitch "High"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteD_Bass_3 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Vanilla_Odour ;
+    :hasPhysicalOrTextualValue "D Bass Clef (3rd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteD_Central a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Clematis_Odour ;
+    :hasPhysicalOrTextualValue "D Bass Clef (2nd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteD_Treble_1 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Heliotrope_Odour ;
+    :hasPhysicalOrTextualValue "D Bass Clef (1st Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteD_Treble_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Violet_Odour ;
+    :hasPhysicalOrTextualValue "D Treble Clef (Central)"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteE_Bass_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Wallflower_Odour ;
+    :hasPhysicalOrTextualValue "E Bass Clef (3rd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteE_Central a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Calamus_Odour ;
+    :hasPhysicalOrTextualValue "E Bass Clef (2nd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteE_Treble_1 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Orris_Odour ;
+    :hasPhysicalOrTextualValue "E Bass Clef (1st Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteE_Treble_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Acacia_Odour ;
+    :hasPhysicalOrTextualValue "E Treble Clef (Central)"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteF_Bass_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Benzoin_Odour ;
+    :hasPhysicalOrTextualValue "F Bass Clef (3rd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteF_Central a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Castor_Odour ;
+    :hasPhysicalOrTextualValue "F Bass Clef (2nd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteF_Treble_1 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Musk_Odour ;
+    :hasPhysicalOrTextualValue "F Bass Clef (1st Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteF_Treble_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Tuberose_Odour ;
+    :hasPhysicalOrTextualValue "F Treble Clef (Central)"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteG_Bass_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Plumeria_Alba_Odour ;
+    :hasPhysicalOrTextualValue "G Bass Clef (3rd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteG_Central a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Pergalaria_Odour ;
+    :hasPhysicalOrTextualValue "G Bass Clef (2nd Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteG_Treble_1 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Sweet_Pea_Odour ;
+    :hasPhysicalOrTextualValue "G Bass Clef (1st Octave Down)"^^xsd:string ;
+    :hasPitch "Low"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Piesse_NoteG_Treble_2 a :WorkComponent ;
+    :definedBy :Piesse_Odophone_Theory ;
+    :evokesValue :Orange_Flower_Odour ;
+    :hasPhysicalOrTextualValue "G Treble Clef (Central)"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Rimbaud_A a :WorkComponent ;
+    :definedBy :Rimbaud_Poetics ;
+    :evokesValue :Black_Color ;
+    :hasPhysicalOrTextualValue "Letter A"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Rimbaud_E a :WorkComponent ;
+    :definedBy :Rimbaud_Poetics ;
+    :evokesValue :White_Color ;
+    :hasPhysicalOrTextualValue "Letter E"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Rimbaud_I a :WorkComponent ;
+    :definedBy :Rimbaud_Poetics ;
+    :evokesValue :Red_Color ;
+    :hasPhysicalOrTextualValue "Letter I"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Rimbaud_O a :WorkComponent ;
+    :definedBy :Rimbaud_Poetics ;
+    :evokesValue :Blue_Color ;
+    :hasPhysicalOrTextualValue "Letter O"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Rimbaud_U a :WorkComponent ;
+    :definedBy :Rimbaud_Poetics ;
+    :evokesValue :Green_Color ;
+    :hasPhysicalOrTextualValue "Letter U"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Shelley_Hyacinth a :WorkComponent ;
+    :definedBy :Shelley_Poetics ;
+    :evokesValue :Music ;
+    :hasPhysicalOrTextualValue "And the hyacinth...Which flung...a sweet peal anew /Of music so delicate..."^^xsd:string ;
+    :hasSourceModality :VisualModality .
+
+:Comp_Skrjabin_A a :WorkComponent ;
+    :definedBy :Skrjabin_Theory ;
+    :evokesValue :Green_Color ;
+    :hasPhysicalOrTextualValue "A Major Tonality"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Skrjabin_C a :WorkComponent ;
+    :definedBy :Skrjabin_Theory ;
+    :evokesValue :Red_Color ;
+    :hasPhysicalOrTextualValue "C Major Tonality"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Skrjabin_D a :WorkComponent ;
+    :definedBy :Skrjabin_Theory ;
+    :evokesValue :BrightYellow_Color ;
+    :hasPhysicalOrTextualValue "D Major Tonality"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Skrjabin_E a :WorkComponent ;
+    :definedBy :Skrjabin_Theory ;
+    :evokesValue :LightBlue_Color ;
+    :hasPhysicalOrTextualValue "E Major Tonality"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Skrjabin_F_Sharp a :WorkComponent ;
+    :definedBy :Skrjabin_Theory ;
+    :evokesValue :Blue_Color ;
+    :hasPhysicalOrTextualValue "F# Major Tonality"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Comp_Skrjabin_G a :WorkComponent ;
+    :definedBy :Skrjabin_Theory ;
+    :evokesValue :Orange_Color ;
+    :hasPhysicalOrTextualValue "G Major Tonality"^^xsd:string ;
+    :hasSourceModality :AuditoryModality .
+
+:Dickinson_Poetics a :SynestheticTheory ;
+    :hasBibliographicSource ""^^xsd:string ;
+    :hasCorrespondenceType :AffectiveCorrespondence .
+
+:EnglishHorn_Sound a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:Flute_Sound a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:FreshFlesh_Sensation a :EvokedValue ;
+    :hasTargetModality :TactileModality .
+
+:Geranium_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Heliotrope_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Indigo_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Jasmin_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Jonquile_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Lavander_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:LightBlue_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Magnolia_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Mint_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Music a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:Musk_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Orange_Flower_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Orris_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Patchouly_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Peppermint_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Pergalaria_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Pineapple_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Plumeria_Alba_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Portugal_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Purple_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Rose_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Santal_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Shelley_Poetics a :SynestheticTheory ;
+    :hasCorrespondenceType :AffectiveCorrespondence .
+
+:Southernwood_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Stokes_And_Pinks_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Storax_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Sweet_Pea_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Syringa_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:TactileModality a :SensoryModality .
+
+:Tolu_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Tonquin_Bean_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Trumpet_Sound a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:Tuba_Sound a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:Tuberose_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Vanilla_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Verbena_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Vernal_Grass_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Violet_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Violet_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:Violin_Sound a :EvokedValue ;
+    :hasTargetModality :AuditoryModality .
+
+:Wallflower_Odour a :EvokedValue ;
+    :hasTargetModality :OlfactoryModality .
+
+:White_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:YellowGreen_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Pascoli_Poetics a :SynestheticTheory ;
+    :hasBibliographicSource "G. Pascoli: Il fanciullino Essay (1897)"^^xsd:string ;
+    :hasCorrespondenceType :AffectiveCorrespondence .
+
+:PhysicalCorrespondence a :CorrespondenceType .
+
+:Yellow_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Orange_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:PerceptualCorrespondence a :CorrespondenceType .
+
+:Green_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Red_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:AffectiveCorrespondence a :CorrespondenceType .
+
+:Blue_Color a :EvokedValue ;
+    :hasTargetModality :VisualModality .
+
+:Rimbaud_Poetics a :SynestheticTheory ;
+    :hasBibliographicSource "A. Rimbaud: Voyelles Sonnet (1871)"^^xsd:string ;
+    :hasCorrespondenceType :AffectiveCorrespondence .
+
+:Skrjabin_Theory a :SynestheticTheory ;
+    :hasBibliographicSource "A. Scriabin: Prometheus Score (1910)"^^xsd:string ;
+    :hasCorrespondenceType :PerceptualCorrespondence .
+
+:Field_Chromatics_Theory a :SynestheticTheory ;
+    :hasBibliographicSource "G. Field: Chromatography (1835)"^^xsd:string ;
+    :hasCorrespondenceType :PerceptualCorrespondence .
+
+:Kandinsky_Theory a :SynestheticTheory ;
+    :hasBibliographicSource "W. Kandinsky: Concerning the Spiritual in Art (1911)"^^xsd:string ;
+    :hasCorrespondenceType :PerceptualCorrespondence .
+
+:Newton_Physical_Theory a :SynestheticTheory ;
+    :hasBibliographicSource "I. Newton: Opticks (1704)"^^xsd:string ;
+    :hasCorrespondenceType :PhysicalCorrespondence .
+
+:VisualModality a :SensoryModality .
+
+:Piesse_Odophone_Theory a :SynestheticTheory ;
+    :hasBibliographicSource "S. Piesse: The Art of Perfumery (1857)"^^xsd:string ;
+    :hasCorrespondenceType :PhysicalCorrespondence .
+
+:OlfactoryModality a :SensoryModality .
+
+:AuditoryModality a :SensoryModality .
+
