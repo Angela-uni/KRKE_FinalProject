@@ -1,0 +1,182 @@
+/* ==========================================
+   1. Keep Existing Rules Intact
+   ========================================== */
+h1, .subtitle {
+    text-align: center;
+}
+
+img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.th {
+    display: block;
+    margin: auto;
+}
+
+/* ==========================================
+   2. Custom Variables & Theme Foundations
+   ========================================== */
+:root {
+    --primary-blue: #0d6efd;
+    --primary-red: #dc3545;
+    --primary-yellow: #ffc107;
+
+    /* Base Colors */
+    --text-dark: #2b2d42;
+    --text-muted: #6c757d;
+    --bg-light: #f8f9fa;
+    --border-color: #e9ecef;
+}
+
+body {
+    color: var(--text-dark);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+/* ==========================================
+   3. Header & Typography Styling
+   ========================================== */
+h1 {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--text-dark);
+    margin-top: 1.5rem;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-yellow), var(--primary-blue));
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+h2 {
+    color: #023e8a; /* Deep, vibrant Royal Blue */
+    font-weight: 800;
+    margin-top: 1.75rem;
+    margin-bottom: 1.25rem;
+    padding-left: 0.85rem;
+    border-left: 5px solid #d90429; /* Primary Red accent bar */
+}
+
+h4 {
+    color: #d90429; /* Vibrant, rich primary red */
+    font-weight: 700;
+    margin-top: 1.5rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid #ffb703; /* Bright primary yellow accent bar */
+}
+
+h6 {
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* Links with subtle Red Accent */
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--primary-red);
+    text-decoration: underline;
+}
+
+/* ==========================================
+   4. Bootstrap Tabs Enhancements
+   ========================================== */
+.nav-tabs {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-dark);
+    font-weight: 500;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Primary Color Focus on Navigation */
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: var(--primary-blue);
+    background-color: rgba(13, 110, 253, 0.04);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-blue) !important;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+/* First Tab Accent (HOME) highlighted with Primary Red Indicator */
+#home-tab.active {
+    border-bottom-color: var(--primary-red);
+    color: var(--primary-red) !important;
+}
+
+/* Tab Container Background */
+.tab-content {
+    background-color: #ffffff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border-color: var(--border-color) !important;
+}
+
+/* ==========================================
+   5. Content Features & Highlights
+   ========================================== */
+/* Styled List Items */
+ul, ol {
+    padding-left: 1.25rem;
+}
+
+li::marker {
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+/* Primary Yellow Accent Box for Key Summaries/Quotes */
+blockquote, .tab-pane p em {
+    font-style: normal;
+}
+
+iframe {
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================
+   6. Footer Enhancements
+   ========================================== */
+footer {
+    background-color: #ffffff;
+}
+
+footer .tracking-wider {
+    letter-spacing: 0.1em;
+}
+
+footer a:hover {
+    color: var(--primary-blue) !important;
+}
