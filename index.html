@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Synsonto</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/@triply/yasgui/build/yasgui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <h1>SynsOnto</h1>
+            <h3 class="subtitle">An Ontology for Synesthesia</h3>
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">HOME</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="theory-tab" data-bs-toggle="tab" data-bs-target="#theory" type="button" role="tab" aria-controls="theory" aria-selected="false">Theoretical Background</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="methodology-tab" data-bs-toggle="tab" data-bs-target="#methodology" type="button" role="tab" aria-controls="methodology" aria-selected="false">Methodology</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="kr-tab" data-bs-toggle="tab" data-bs-target="#kr" type="button" role="tab" aria-controls="kr" aria-selected="false">Knowledge Representation</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="ke-tab" data-bs-toggle="tab" data-bs-target="#ke" type="button" role="tab" aria-controls="ke" aria-selected="false">Knowledge Extraction</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="conclusions-tab" data-bs-toggle="tab" data-bs-target="#conclusions" type="button" role="tab" aria-controls="conclusions" aria-selected="false">Conclusions</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="references-tab" data-bs-toggle="tab" data-bs-target="#references" type="button" role="tab" aria-controls="references" aria-selected="false">References</button>
+                </li>
+            </ul>           
+            <!-- Tab Panes -->
+            <div class="tab-content border-start border-end border-bottom p-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row align-items-center">
+                        <div class="col-md-9">
+                            <h2>Overview</h2>
+                            <p>The project is developed for the final exam of Knowledge Representation and Extraction, course taught by Professor Aldo Gangemi within the Master's Degree Program in Digital Humanities and Digital Knowledge (A.A. 2025/2026 - University of Bologna).</p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <img src="images/SynsontoLogo.png" alt="Logo of Synsonto" title="Logo" class="img-fluid">
+                        </div>
+                    </div>
+                    <h4>Scope and Objectives of the project</h4>
+                    <p>The term synesthesia, derived from the Greek <em>syn</em> (together) and <em>aisthesis</em> (sensation), refers to a neurological phenomenon in which the stimulation of one sensory or cognitive pathway leads to involuntary, automatic experiences in a second sensory or cognitive pathway.</p>
+                    <p>
+                        This phenomenon is profoundly embedded in human culture and we can find it in diverse domains:
+                        <ul>
+                            <li><b>Science:</b> through attempts to map mathematical or physical laws to sensory domains.</li>
+                            <li><b>Music and Art:</b> through the works of composers and painters who sought to bridge the auditory and visual worlds, translating chords into colors and canvases into symphonies.</li>
+                            <li><b>Literature:</b> through poetic frameworks where writers blended sensory metaphors to evoke heightened emotional and cognitive states.</li>
+                        </ul>
+                        In this project, we have designed a formal ontology of Synesthesia capable of modeling, mapping, and preserving these cross-modal relationships. It is possible to explore the theory behind the phenomenon, the methodology that we adopted to create the ontology, see how we represented it and what we are able to retrieve from the model.
+                        For more details and the complete files please look at the <a href="https://github.com/Angela-uni/KRKE_FinalProject" title="GitHub repository of the project">GitHub repository</a>.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="theory" role="tabpanel" aria-labelledby="theory-tab">
+                    <p>
+                        Before delving into the technical architecture of our ontology, the following sections will illustrate some examples, spanning science, music, art and literature, that we have analyzed and utilized to populate our dataset and validate our semantic model.
+                    </p>
+                    <h2>Theories on Synesthesia</h2>
+                    <h4>Synesthesia in Science</h4>
+                    <p>
+                        Historically, the blending of the senses was not merely seen as a subjective artistic experience, but as a potential manifestation of universal physical laws. During the 18th and 19th centuries, several scientists attempted to construct systems to map the relationships between different sensory modalities.
+                        In our project, we have integrated three foundational historical systems to populate and validate our ontology: Isaac Newton’s color-music spectrum, George Field’s chromatics, and Septimus Piesse’s odophone system.
+                    </p>
+                    <h6>Isaac Newton: The Physical Analogy of Light and Sound</h6>
+                    <p>
+                        In the treatise titled <em>Opticks</em> (1704), Sir Isaac Newton hypothesized a fundamental, physical correspondence between the vibrations of light waves and sound waves. By dividing the visible light spectrum into seven distinct colors, Newton drew a direct mathematical analogy to the seven discrete tones of the musical diatonic scale.
+                        Within this physical framework, specific colors were mapped directly to musical notes (e.g., Note D corresponding to Red, Note E to Orange, Note F to Yellow, and so forth). Newton's approach represents an early scientific attempt to unify optics and acoustics under a single harmonic law, treating synesthetic mapping as a measurable phenomenon of the physical world.
+                    </p>
+                    <img src="images/Newton.png" class="th" alt="Newton's color wheel" title="Newton's colour wheel" style="width:30%;">
+                    <h6>George Field: Chromatics and Perceptual Harmonies</h6>
+                    <p>
+                        The British chemist and color theorist George Field wrote about these cross-modal associations in his works on <em>Chromatography and Chromatics</em> (1817–1835). Unlike Newton's strictly physical wave analogy, Field focused on a perceptual correspondence, exploring how combinations of colors could evoke the same structural harmony as musical chords.
+                        He developed a refined chromatic scale where musical notes were mapped to specific colors (such as Note C mapping to Blue, Note D to Purple, and Note E to Red). 
+                    </p>
+                    <h6>Septimus Piesse: The Art of Perfumery and the Odophone</h6>
+                    <p>
+                        In 1857, the chemist and perfumer G.W. Septimus Piesse revolutionized the olfactory arts by publishing <em>The Art of Perfumery</em>, introducing a systematic framework known as the Odophone. Piesse presents a scale of correspondences between sounds and odours, as he was convinced that there is an octave of odours like an octave in music.
+                    </p>
+                    <img src="images/Piesse.jpg" class="th" alt="Piesse's Odophone" title="Piesse's Odophone" style="width:30%;">
+                    <h4>Synesthesia in Music</h4>
+                    <h6>Scriabin and the clavier à lumier</h6>
+                    <p>
+                        Within the domain of musical composition, the integration of sensory modalities found its most profound expression in the early 20th century through the visionary work of the Russian composer and pianist Alexander Scriabin. Scriabin’s most famous synesthetic contribution is documented in his 1910 symphonic work, <em>Prometheus: The Poem of Fire (Op. 60)</em>.
+                        Scriabin wanted the performance of the symphonic poem <em>Prometheus</em> to be accompanied by the <em>clavier à lumières</em>: an electrophone keyboard instrument that projects a beam of colored light corresponding to each note or harmonic change.
+                    </p>
+                    <img src="images/Scriabin.png" class="th" alt="Scriabin's clavier à lumières" title="Scriabin's clavier à lumières" style="width:30%;">
+                    <h4>Synesthesia in Art</h4>
+                    <h6>Kandinsky’s Visual Music</h6>
+                    <p>
+                        The Russian painter and art theorist Wassily Kandinsky sought to bring music, sound, and rhythm onto the painted canvas. Kandinsky is widely regarded as a pioneer of abstract art, and his entire creative methodology was profoundly dictated by his lived synesthetic experiences, particularly the cross-modal relationship between sight and hearing.
+                        In his theoretical treatise, <em>Concerning the Spiritual in Art</em> (1911), Kandinsky articulated that colors and shapes do not merely represent objects in the physical world, but possess an "inner resonance". He believed that a painting should affect the spectator's soul in the same manner that a musical composition affects a listener.
+                        Kandinsky attempted to formalize a rigorous correspondence system that linked specific colors with musical instruments:
+                        <ul>
+                            <li>Blue is mapped to the cello</li>
+                            <li>Light blue is mapped to the flute</li>
+                            <li>Green is mapped to the violin</li>
+                            <li>Orange is mapped to the church bell</li>
+                            <li>Red is mapped to the tuba</li>
+                            <li>Violet is mapped to the English horn</li>
+                            <li>Yellow is mapped to the trumpet</li>
+                        </ul>
+                    </p>
+                    <img src="images/Kandinsky.jpg" class="th" alt="Kandinsky's Jaune, Rouge, Bleu" title="Kandinsky's Jaune, Rouge, Bleu" style="width:30%;">
+                    <h4>Synesthesia in Literature</h4>
+                    <h6>French Symbolism</h6>
+                    <p>
+                        In the realm of literature, synesthesia transcended the boundaries of a simple rhetorical device or metaphor, becoming the core aesthetic and philosophical foundation of the 19th-century French Symbolist movement.
+                        For the Symbolist poets, the human senses were not isolated channels, but interconnected pathways capable of unveiling a deeper, hidden reality. Rather than merely describing the physical world, they used language to trigger cross-modal sensory experiences, blending sight, sound, and smell to evoke profound psychological and emotional states.
+                    </p>
+                    <h6>Charles Baudelaire: The Universal Network of Correspondances</h6>
+                    <p>
+                        The theoretical and poetic manifesto of literary synesthesia is captured in Charles Baudelaire’s foundational sonnet, <em>Correspondances</em> (published in his 1857 masterpiece <em>Les Fleurs du Mal</em>). Baudelaire conceptualized nature as a temple of living pillars where words, sounds, colors, and perfumes merge into a dark and profound unity.
+                        Baudelaire’s work introduces a highly sophisticated framework of synesthesia based on emotional and affective correspondences. In the sonnet, he explicitly maps olfactory stimuli to tactile, auditory, and visual perceptions: for example, fresh perfumes are compared to the soft skin of children (<em>"perfumes fresh as a child's flesh"</em>), bridging the olfactory and tactile domains.
+                    </p>
+                    <h6>Arthur Rimbaud: The Chromatic Alphabet of Voyelles</h6>
+                    <p>
+                        While Baudelaire explored the fluid, mystical harmony of the senses, Arthur Rimbaud attempted a more radical and structured codification of literacy synesthesia in his famous 1871 sonnet, <em>Voyelles</em> ("Vowels").
+                        In this poem, Rimbaud subverted the traditional abstract nature of written language by assigning a distinct, vivid color to each vowel of the alphabet, establishing an early literary model of grapheme-color synesthesia.
+                        Rimbaud’s explicit alphabetical mapping provides a rigid classification:
+                        <ul>
+                            <li>A is mapped to Black ("A noir")</li>
+                            <li>E is mapped to White ("E blanc")</li>
+                            <li>I is mapped to Red ("I rouge")</li>
+                            <li>O is mapped to Blue ("O bleu")</li>
+                            <li>U is mapped to Green ("U vert")</li>
+                        </ul>
+                    </p>
+                    <h2>Synesthetic Relationships</h2>
+                    <p>
+                        Not all synesthetic mappings are built upon the same foundation.
+                        We can classify synesthetic relationships into three primary typologies: Structural (or Physical), Perceptual, and Affective.
+                    </p>
+                    <h4>Structural (or Physical) Correspondence</h4>
+                    <p>
+                        Structural synesthesia encompasses systems grounded in measurable and mathematical frameworks. In these models, the association between two sensory modalities is not derived from subjective emotion or involuntary hallucination, but is justified by an underlying physical law, proportional analogy, or structural alignment.
+                        For example, Sir Isaac Newton’s mapping of optical light wave frequencies to acoustic diatonic scales is a purely structural correspondence. 
+                    </p>
+                    <h4>Perceptual Correspondence</h4>
+                    <p>
+                        Perceptual correspondence defines associations that arise from direct sensory or cognitive connections.
+                        In these instances, a stimulus in one modality automatically and vividly triggers a sensation in another, operating as an unmediated sensory translation.
+                    </p>
+                    <h4>Affective Correspondence</h4>
+                    <p>
+                        Affective synesthesia occurs when the cross-modal link is mediated by a shared emotional valence.
+                        In this typology, the stimuli are connected not because they share a physical frequency or a direct neurological trigger, but because they evoke the same internal state.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="methodology" role="tabpanel" aria-labelledby="methodology-tab">
+                    <h2>Methodology</h2>
+                    <p>To constructing SynsOnto we followed these stages (in temporal order):</p>
+                    <ol>
+                        <li><b>Study of the domain:</b> since we both hold a Bachelor's Degree in Humanities, we started thinking of synesthesia as the figure of speech in which two terms belonging to different sensory spheres are associated.
+                            After studying the articles by Spence and Di Stefano, we soon discovered that synesthesia was much more: a neurological phenomenon that suddenly appears in a cognitive pathway.
+                        </li>
+                        <li><b>Selection of theories:</b> we chose the most relevant theories about the topic and we summarized them in a dedicated section because for us having at least a clear historical background was fundamental in order to discover the relationships of synesthesia in the subjects and fields in which this appears.</li>
+                        <li><b>Identification of fundamental relationships:</b> by cross-referencing the information found, we identified what each individual theorist associated with a specific element, while remaining within their respective fields.</li>
+                        <li><b>Definition of complex relationships using Protégé:</b> we finally moved to Protégé for creating the ontology and in this occasion we defined classes, properties and hierarchies.
+                            This has been the base of the dataset, created in CSV format. The ontology was then populated in RDF triples, in a Turtle format.
+                        </li>
+                        <li><b>Querying the ontology:</b> using the SPARQL query visualizer on Protégé we queried the ontology to extract information. The queries were designed as plausible inquiries from a typical user; consequently, the level of detail varies.
+                            As a reference, we can say that the first two are more generic and basic, while the other five are more in-depth.
+                        </li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade" id="kr" role="tabpanel" aria-labelledby="kr-tab">
+                    <h2>Structure of the ontology</h2>
+                    <h4>Classes, Subclasses, Object Properties and Datatype Properties</h4>
+                    <h6>Classes</h6>
+                    <p>Work: represents an artistic work or a conceptual/scientific construct subject to synesthetic analysis.</p>
+                    <p>WorkComponent: represents the atomic constituent element of a work of art that acts as a trigger or vehicle for the synesthetic stimulus.</p>
+                    <p>SynestheticTheory: represents the theoretical, poetic, or experimental framework that encodes and justifies cross-modal associations between different sensory modalities.</p>
+                    <p>CorrespondenceType: represents the type of conceptual association (e.g., physical, perceptual, or affective) upon which a specific synesthetic theory is based.</p>
+                    <p>SensoryModality: represents the sensory channel or perceptual modality (e.g., auditory, visual, olfactory) involved in the cross-modal association.</p>
+                    <p>EvokedValue: represents the concept, sensation, or perceived entity that is brought to mind through the synesthetic stimulus.</p>
+                    <h6>Subclasses</h6>
+                    <p>MusicalWork: subclass of work. It represents an artistic work of a primarily musical or compositional nature (e.g., an opera or a symphony).</p>
+                    <p>LiteraryWork: subclass of work. It represents an artistic work of a textual, poetic, or literary nature (e.g., a sonnet or a poem).</p>
+                    <p>VisualArtsWork: subclass of work. It represents a visual, plastic, or pictorial artistic work (e.g., a painting or a drawing).</p>
+                    <p>ScientificWork: subclass of work. It represents a construct, a theoretical system, or an empirical experiment of a scientific-structural nature.</p>
+                    <h6>Object Properties</h6>
+                    <p>hasComponent: links a work of art (Work) to the individual atomic elements or parts that constitute it (WorkComponent).</p>
+                    <p>definedBy: associates a work component (WorkComponent) with the synesthetic theory (SynestheticTheory) that governs and explains its association.</p>
+                    <p>hasCorrespondenceType: links a given synesthetic theory (SynestheticTheory) to the intrinsic nature of its correspondence (CorrespondenceType).</p>
+                    <p>hasSourceModality: specifies the starting sensory modality (SensoryModality) inherent to the original stimulus of the artistic component.</p>
+                    <p>hasTargetModality: specifies the destination sensory modality (SensoryModality) toward which the synesthetic association is directed and evoked.</p>
+                    <p>evokesValue: links a work component (WorkComponent) to the specific entity, concept, or sensation (EvokedValue) that is mentally triggered or recalled by the synesthetic phenomenon.</p>
+                    <h6>Datatype Properties</h6>
+                    <p>hasPhysicalOrTextualValue: specifies the literal value, textual string, or physical data directly associated with a work component (e.g., a musical key or a poetic verse).</p>
+                    <p>hasPitch: indicates the frequency or musical pitch (e.g., "High"/"Low") identified within the analyzed sound component.</p>
+                    <p>hasBibliographicSource: contains the bibliographic, literary, or documentary reference from which the examined synesthetic theory is derived.</p>
+                    <h4>SynsOnto visualized with OntoGraph in Protégé</h4>
+                    <img src="images/OntoGraph.jpeg" alt="SynsOnto visualized with OntoGraph in Protégé" title="SynsOnto visualized with OntoGraph in Protégé" style="width:100%;">
+                    <h4>Dataset</h4>
+                    <p>A dataset is crucial for formalizing the ontology data and we chose to do it in a CSV format.
+                        This choice was made in order to have already a structure similar to the RDF triples that would be created later, as a file CSV consists of columns and rows.</p>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:356px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2FsynestheticDataset.csv&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <h4>Populated ontology</h4>
+                    <p>First, we wrote a Python script that would transform the CSV file into RDFs, in a Turtle format. This is a fundamental procces when creating an ontology, otherwise it is not populated.
+                        Here below it is possible to see the result:
+                    </p>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:356px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2Fpopulated_synsonto.ttl&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <h4>Graph of the populated ontology</h4>
+                    <img src="images/PopulatedGraph.jpeg" alt="Populated Ontology" title="SynsOnto populated on Protégé" style="width:100%;">
+                </div>
+                <div class="tab-pane fade" id="ke" role="tabpanel" aria-labelledby="ke-tab">
+                    <h2>Knowledge Extraction</h2>
+                    <p>We formalized our requests on SPARQL and we used the dedicated tool on Protégé for retrieving the answers.</p>
+                    <p>In this phase of the project we queried the dataset to extract the implicit knowledge. This is a crucial step because it allows us to illustrate the relationships between classes and subclasses, concepts and individuals, how many times a determined event happens, etc.
+                        Being able to interact with the dataset is what makes the ontology not only a static graph on paper but also a tool that brings complex and, sometimes, hidden meanings to surface.
+                    </p>
+                    <p>We chose seven queries that have different levels of complexity: some of them are more generic, others are more specific.</p>
+                    <h4>Query 1: Retrieve all the works and their types.</h4>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:226px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2Fqueries.rq%23L2-L8&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <iframe src="Foglio1.html" width="100%" height="300px"></iframe>
+                    <h4>Query 2: What components Rimbaud takes into consideration and what are the evoked values?</h4>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:247px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2Fqueries.rq%23L11-L18&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <iframe src="Foglio2.html" width="100%" height="170px"></iframe>
+                    <h4>Query 3: How a source modality triggers a target modality?</h4>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:289px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2Fqueries.rq%23L21-L30&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <iframe src="Foglio3.html" width="100%" height="300px"></iframe>
+                    <h4>Query 4: Retrieve the bibliographic sources of the synesthetic theories that rely on a "Perceptual Correspondence".</h4>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:226px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2Fqueries.rq%23L33-L39&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <iframe src="Foglio4.html" width="100%" height="150px"></iframe>
+                    <h4>Query 5: How many times each sensory modality is target-evoked?</h4>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:247px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2Fqueries.rq%23L42-L49&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <iframe src="Foglio5.html" width="100%" height="150px"></iframe>
+                    <h4>Query 6: What scents described in the Odophone system by Piesse are triggered by the musical notes that have a high pitch?</h4>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:289px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2Fqueries.rq%23L52-L61&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <iframe src="Foglio6.html" width="100%" height="300px"></iframe>
+                    <h4>Query 7: Retrieve all the evoked values by a visual modality that show up in an auditory modality.</h4>
+                    <iframe frameborder="0" scrolling="no" style="width:100%; height:310px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FAngela-uni%2FKRKE_FinalProject%2Fblob%2Fmain%2Fqueries.rq%23L64-L74&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on&maxHeight=300"></iframe>
+                    <iframe src="Foglio7.html" width="100%" height="250px"></iframe>
+                </div>
+                <div class="tab-pane fade" id="conclusions" role="tabpanel" aria-labelledby="conclusions-tab">
+                    <h2>Conclusions</h2>
+                    <p>SynsOnto is a project that developed an ontology that could explained the synesthesia, in all its fields. The first aim was to offer a simple and interactive approach, so that those who do not know anything about synesthesia can still be involved. Synesthesia was the subject of many works by different kind of scholars: from Science to Music, Art, Literature, it is a condition that it's worth talking about.</p>
+                    <p>The analysis was guided by the works of Charles Spence and Nicola Di Stefano (see References). As new theories were encountered we took notes about the authors of that theories, what senses were involved and what elements were evoked.
+                        Then, we constructed an ontology that would show these relationships in an automatic way. Thanks to this model, it is clear that synesthesia is common to theorists or scholars that could have nothing to do with each other.
+                    </p>
+                    <p>The process of creation followed a linear path: first, reading the articles on the subject, then choosing the most relevant theories. After, formalize this in a correct model, using Protégé, and populate the ontology in a rich dataset.
+                        The dataset was subjected to some questions, to bring to life in a more understandable way what is hidden at first sight. We tried to include examples that could have been made by different kind of users, both experts and inexperienced people.
+                    </p>
+                    <p>As regards possible future developments, the first thing would be to enrich the dataset with more theories, maybe allowing the scholars to add their own researches directly.
+                        Another point is the insertion of AIs: at the moment LLMs are expanding out of all proportion and although they are still trained on explicit knowledge, there is no reason to think that one day, even a very near one, they cannot also manage implicit knowledge.
+                        Connected to this, we report the <a href="https://aldogangemihug-polanyi-demo.hf.space" title="Polanyi">Polanyi project</a>, coordinated by Professor Aldo Gangemi.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="references" role="tabpanel" aria-labelledby="references-tab">
+                    <h2>References</h2>
+                    <p>
+                        <h6>Bibliography</h6>
+                        <ul>
+                            <li>Spence, C., & Di Stefano, N. (2024). Sensory translation between audition and vision. Psychonomic Bulletin & Review, 31(2), 599–626. <a href="https://doi.org/10.3758/s13423-023-02343-w" title="DOI">https://doi.org/10.3758/s13423-023-02343-w</a></li>
+                            <li>Di Stefano, N., & Spence, C. (2024). Should absolute pitch be considered as a unique kind of absolute sensory judgment in humans? A systematic and theoretical review of the literature. Cognition, 249, Article 105805. <a href="https://doi.org/10.1016/j.cognition.2024.105805" title="DOI">https://doi.org/10.1016/j.cognition.2024.105805</a></li>
+                            <li>Spence, C., & Di Stefano, N. (2026). On sensory similarities. Consciousness and Cognition, 140, Article 104019. <a href="https://doi.org/10.1016/j.concog.2026.104019" title="DOI">https://doi.org/10.1016/j.concog.2026.104019</a></li>
+                            <li>Spence, C., & Di Stefano, N. (2022). Coloured hearing, colour music, colour organs, and the search for perceptually meaningful correspondences between colour and sound. I-Perception (London), 13(3), 20416695221092802. <a href="https://doi.org/10.1177/20416695221092802" title="DOI">https://doi.org/10.1177/20416695221092802</a></li>
+                            <li>Spence, C., Di Stefano, N., Reinoso-Carvalho, F., & Velasco, C. (2024). Marketing sonified fragrance: Designing soundscapes for scent. I-Perception (London), 15(4), Article 20416695241259714. <a href="https://doi.org/10.1177/20416695241259714" title="DOI">https://doi.org/10.1177/20416695241259714</a></li>
+                            <li>Di Stefano, N., Murari, M., & Spence, C. (2022). Crossmodal Correspondences in Art and Science: Odours, Poetry, and Music. In N. Di Stefano & M. T. Russo (Eds.), Olfaction: An Interdisciplinary Perspective from Philosophy to Life Sciences (pp. 155–189). Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-75205-7_10" title="DOI">https://doi.org/10.1007/978-3-030-75205-7_10</a></li>
+                        </ul>
+                        <h6>Readings</h6>
+                        <ul>
+                            <li>Beaudlaire, C., (1857). Correspondances</li>
+                            <li>Dickinson, E., (1860s). They have a little Odor...</li>
+                            <li>Field, G., (1835). Chromatography; or, a Treatise on Colours and Pigments, and their Powers in Painting.</li>
+                            <li>Kandinsky, W., (1911). Concerning the Spiritual in Art.</li>
+                            <li>Newton, I., (1704). Optiks.</li>
+                            <li>Pascoli, G., (1896). X Agosto.</li>
+                            <li>Pascoli, G., (1897). Il fanciullino.</li>
+                            <li>Pascoli, G., (1900). La mia sera.</li>
+                            <li>Piesse, S., (1857). The Art of Perfumery.</li>
+                            <li>Rimbaud, A., (1871). Voyelles.</li>
+                            <li>Scriabin, A., (1910). Prometheus.</li>
+                            <li>Shelley, P.B., (1820). The Sensitive Plant.</li>
+                        </ul>
+                        <h6>Tools</h6>
+                        <ul>
+                            <li>AlmaStart: <a href="https://almastart.unibo.it/discovery/search?vid=39UBO_INST:VU" title="AlmaStart">https://almastart.unibo.it/discovery/search?vid=39UBO_INST:VU</a></li>
+                            <li>Protégé: <a href="https://protege.stanford.edu" title="Protégé">https://protege.stanford.edu</a></li>
+                            <li>Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/Pagina_principale" title="Wikimedia Commons">https://commons.wikimedia.org/wiki/Pagina_principale</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid mt-5 py-4 border-top">
+            <div class="container">
+                <div class="row align-items-center">  
+                    <!-- Left Side: Copyright Info -->
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0 text-muted">&copy; 2026 Alma Mater Studiorum - Università di Bologna. All rights reserved.</p>
+                    </div>     
+                    <!-- Right Side: Contact Information -->
+                    <div class="col-md-6">
+                        <div class="row text-center text-md-end justify-content-center justify-content-md-end mb-2">
+                            <div class="col-12">
+                                <span class="text-uppercase small text-muted fw-bold tracking-wider">TEAM</span>
+                            </div>
+                        </div>
+                        <div class="row text-center text-md-end">         
+                        <!-- Your Contact Info -->
+                            <div class="col-6 col-md-12 mb-md-2">
+                                <span class="d-block fw-bold text-dark">Angela Paganini</span>
+                                <a href="https://github.com/Angela-uni" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center gap-2 text-decoration-none text-muted" title="GitHub of Angela"><i class="bi bi-github"></i>GitHub</a>
+                            </div>          
+                        <!-- Colleague's Contact Info -->
+                            <div class="col-6 col-md-12">
+                                 <span class="d-block fw-bold text-dark">Susanna Valentini</span>
+                                <a href="https://github.com/SusannaV14" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center gap-2 text-decoration-none text-muted" title="GitHub of Susanna"><i class="bi bi-github"></i>GitHub</a>
+                            </div>         
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
